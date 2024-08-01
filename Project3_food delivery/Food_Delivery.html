@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food_Delivery</title>
+    <link rel="stylesheet" href="CSS Food Delivery/Food Delivery.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width : 1400px)"
+      href="CSS Food Delivery/Phone.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="eye,png.png" alt="this is logo" />
+      </div>
+      <ul>
+        <li class="item"><a href="#Home">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#client-section">Clients</a></li>
+        <li class="item"><a href="#contact">Contact Us</a></li>
+        <li class="item"><a href="#payment">Payment</a></li>
+      </ul>
+      </div>
+    <div class="login">
+      <button class="btn">Login</button>
+      <button class="btn">SignUp</button>
+    </div>
+    </nav>
+
+    <section id="Home">
+      <div class="h-primary"><h1>Welcome to MyFoodMeal</h1></div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+        deserunt nulla quasi, quisquam praesentium ipsam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+        omnis dolor ut libero at illo placeat, accusamus iste veritatis
+        accusantium!
+      </p>
+      <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+      <div class="h-primary center">Our Services</div>
+      <div id="services">
+        <div class="box">
+          <img src="burger.png.jpg" alt="This is burger" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="p-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            iusto accusamus recusandae amet quaerat quod voluptas eveniet
+            voluptates eos! Cumque veritatis, perferendis quibusdam libero quo
+            voluptates ratione consequatur eaque sunt dolor autem beatae sed!
+          </p>
+          <button class="btn">Food Order</button>
+        </div>
+        <div class="box">
+          <img src="pupkin.png.jpg" alt="This is burger" />
+          <h2 class="h-secondary center">Fruit Ordering</h2>
+          <p class="p-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            iusto accusamus recusandae amet quaerat quod voluptas eveniet
+            voluptates eos! Cumque veritatis, perferendis quibusdam libero quo
+            voluptates ratione consequatur eaque sunt dolor autem beatae sed!
+          </p>
+          <button class="btn">Fruit Order</button>
+        </div>
+        <div class="box">
+          <img src="store.png.jpg" alt="This is burger" />
+          <h2 class="h-secondary center">Store Services</h2>
+          <p class="p-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            iusto accusamus recusandae amet quaerat quod voluptas eveniet
+            voluptates eos! Cumque veritatis, perferendis quibusdam libero quo
+            voluptates ratione consequatur eaque sunt dolor autem beatae sed!
+          </p>
+          <button class="btn">Store Service</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="client-section">
+      <h1 class="h-primary center">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="logo4.png.png" alt="this is client logo" />
+        </div>
+        <div class="client-item">
+          <img src="logo3.png.png" alt="this is client logo" />
+        </div>
+        <div class="client-item">
+          <img src="logo1,png.png" alt="this is client logo" />
+        </div>
+        <div class="client-item">
+          <img src="eye,png.png" alt="this is client logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="h-primary">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">E-Mail:</label>
+            <input
+              type="E-mail"
+              name="E-Mail"
+              id="E-Mail"
+              placeholder="Enter your E-Mail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone:</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Enter your number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Message:</label>
+            <textarea name="Message" id="Message" cols="15" rows="7">Message</textarea
+            >
+          </div>
+        </form>
+      </div>
+      <button class="btn">submit</button>
+    </section>
+
+    <section id="payment">
+      <h1 class="h-primary">Payment Now</h1>
+      <div class="Card_Type">
+        <h2 class="h-secondary">Card_type:</h2>
+        <select name="Card" class="Card_Type">
+          <option value="" class="Card_Type">--select a card Type</option>
+          <option value="Visa">Visa</option>
+          <option value="Rupay">Rupay</option>
+          <option value="Master Card">Master Card</option>
+        </select>
+      </div>
+      <div class="Card_detail">
+        <div>
+          <label for="card_number">Card Number</label>
+          <input
+            type="number"
+            name="number"
+            id="Card_number"
+            placeholder="Enter your Card number"
+          />
+        </div>
+        <div>
+          <label for="Expiration_Date">Expiration_Date</label>
+          <input
+            type="date"
+            name="date"
+            id="Date"
+            placeholder="Enter your Expiration_Date"
+          />
+        </div>
+        <div>
+          <label for="CVV">CVV</label>
+          <input
+            type="password"
+            name="Password"
+            id="Password"
+            placeholder="Enter your CVV number"
+          />
+        </div>
+      </div>
+      <button class="btn">PAY NOW</button>
+    </section>
+
+    <footer>
+      <div class="center">
+        Copyright &copy; www.MyOnlinemeal.com. All rights reserved!
+      </div>
+    </footer>
+  </body>
+  <script src="JS Food Delivery/first.js"></script>
+</html>

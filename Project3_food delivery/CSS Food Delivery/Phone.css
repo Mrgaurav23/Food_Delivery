@@ -1,0 +1,51 @@
+/* navigation */
+#navbar {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#navbar ul{
+  margin: auto;
+}
+/* Home Section */
+#Home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2px 5px;
+}
+
+/* Service section */
+#services {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#services .box {
+  height: 350px;
+}
+
+/* Client section */
+
+#clients {
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+#clients img {
+  height: 60px;
+  padding: 12px;
+}
+/* Contact Section */
+
+/* Payment section */
+
+/* footer */
+
+/* Utility classes */
+.h-primary {
+  font-size: 1.4rem;
+}
+
+.h-secondary {
+  font-size: 0.9rem;
+}

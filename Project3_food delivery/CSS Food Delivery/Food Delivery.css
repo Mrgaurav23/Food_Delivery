@@ -1,0 +1,324 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body  */
+
+body {
+  color: rgb(40, 62, 74);
+  background-color: rgb(238, 253, 251);
+}
+
+/* CSS variable */
+
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+
+/* Navigation Bar : Logo and Images */
+#logo {
+  margin: 10px 20px;
+}
+
+#logo img {
+  margin: 3px 6;
+  width: 60px;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+  margin-right: auto;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+#navbar ul li a {
+  /* color: white; */
+  display: block;
+  padding: 2px 15px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#navbar .login .btn{
+  margin-right: 22px;
+  background-color: rgb(95, 94, 103);
+}
+#navbar .login .btn:hover{
+  cursor: pointer;
+  background-color: beige;
+}
+
+/* Home section */
+#Home {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  position: relative;
+}
+#Home::before {
+  content: "";
+  background: url("../hallowen.png.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#Home h1 {
+  /* color: White; */
+  text-align: center;
+  /* font-family: 'Bree Serif',serif; */
+  font-family: "Baloo Bhai", cursive;
+}
+
+#Home p {
+  /* color: white; */
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* services section */
+#services {
+  margin: 20px;
+  display: flex;
+}
+#services .box {
+  height: 299px;
+  padding: 20px;
+  border: 2px solid orange;
+  border-radius: 15px;
+  margin: 7px;
+  font-size: 0.6rem;
+  box-shadow: 18px;
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Client section */
+#client-section {
+  height: 260px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("art.png.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 35%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 100px;
+  padding: 34px;
+}
+
+/* Contact section */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url("job.png.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: rgb(254, 247, 247);
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Baloo Bhai", cursive;
+}
+
+/* Payment section */
+
+/* #payment{
+} */
+
+#payment::before {
+  content: "";
+  width: 100%;
+  height: 420px;
+  background: url("statue.png.jpg") no-repeat center center/cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+#payment .Card_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+}
+#payment .Card_detail input {
+  margin: 12px;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 10px;
+  background-color: rgb(254, 247, 247);
+}
+#payment label {
+  font-size: 0.9rem;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#payment select {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classses */
+.h-primary {
+  font-size: 2.5rem;
+  padding: 7px 9px;
+  font-weight: bolder;
+  font-family: "Baloo Bhai", cursive;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.h-secondary {
+  font-size: 1.2rem;
+  padding: 12px;
+  color: rgb(96, 8, 55);
+  text-align: center;
+}
+.p-secondary {
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 5px 12px;
+  border-radius: 4px;
+  background-color: rgb(35, 44, 143);
+  margin: 12px auto;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+#contact .btn {
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: rgb(167, 241, 245);
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  width: 35%;
+}
+#payment .btn {
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: rgb(167, 241, 245);
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  width: 35%;
+}
+#services .btn {
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: rgb(248, 212, 231);
+  margin: 6px auto;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  width: 35%;
+}
+.btn:hover {
+  background-color: rgb(134, 102, 15);
+}
+#services .btn:hover {
+  background-color: rgb(134, 102, 15);
+}
+#contact .btn:hover {
+  background-color: rgb(134, 102, 15);
+}
+#payment .btn:hover {
+  background-color: rgb(134, 102, 15);
+}
